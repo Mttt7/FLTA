@@ -1,0 +1,27 @@
+
+    <div class="navbar-container">
+        <div class="logo">
+            FLTA+
+        </div>
+        <ul>
+            <li
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            >
+                <a routerLink="/" >
+                    <h2>translate</h2>
+                </a>
+    
+            </li>
+            <li routerLinkActive="active"> 
+                <a routerLink="saved">
+                    <h2>saved</h2>
+                </a>
+    
+            </li>
+    
+        </ul>
+        <div class="profile"><img [src]="profileImage" alt=""></div>
+    </div>
+    
+    

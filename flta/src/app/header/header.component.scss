@@ -1,0 +1,45 @@
+
+.navbar-container{
+    display: flex;
+   background-color: black;
+   color: white;
+   align-items: center;
+   justify-content: space-around;
+   width: 100vw;
+   padding: 2rem;
+   gap: 2rem;
+   margin: 0;
+}
+
+.logo{
+    font-size: 3.8rem;
+    
+}
+
+
+
+
+ul {
+    display: flex;
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: dodgerblue;
+}
+.profile{
+    
+    
+    img{
+        width: 60px;
+        height: 60px;
+        
+    }
+}

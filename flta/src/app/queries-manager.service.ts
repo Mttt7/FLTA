@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import {  Word } from './shared/word-model';
 
 @Injectable({
@@ -6,9 +6,15 @@ import {  Word } from './shared/word-model';
 })
 export class QueriesManagerService {
 
+
+  wordsUpdated = new EventEmitter<void>()
+
+  
+
   constructor() { }
 
-  words:Word[] = [new Word('bazgroly',["bazgroły", "rysunek bez celu"],["Her notebook was filled with random doodles.", "I can't concentrate during meetings, so I just doodle in my notebook.", "She doodled a cute little elephant during class.", "I don't think drawing doodles is a waste of time; it can be relaxing."],["Jej zeszyt był pełen przypadkowych bazgrołów.", "Nie potrafię skupić się podczas spotkań, więc tylko bazgrzę w swoim zeszycie.", "Podczas zajęć rysowała uroczy mały słonik.", "Nie uważam, że rysowanie bazgrołów to strata czasu; może to być relaksujące."],false)]
+  words:Word[] = [new Word('doodle',["bazgroły", "rysunek bez celu"],["Her notebook was filled with random doodles.", "I can't concentrate during meetings, so I just doodle in my notebook.", "She doodled a cute little elephant during class.", "I don't think drawing doodles is a waste of time; it can be relaxing."],["Jej zeszyt był pełen przypadkowych bazgrołów.", "Nie potrafię skupić się podczas spotkań, więc tylko bazgrzę w swoim zeszycie.", "Podczas zajęć rysowała uroczy mały słonik.", "Nie uważam, że rysowanie bazgrołów to strata czasu; może to być relaksujące."],false),
+  new Word('doodle',["bazgroły", "rysunek bez celu"],["Her notebook was filled with random doodles.", "I can't concentrate during meetings, so I just doodle in my notebook.", "She doodled a cute little elephant during class.", "I don't think drawing doodles is a waste of time; it can be relaxing."],["Jej zeszyt był pełen przypadkowych bazgrołów.", "Nie potrafię skupić się podczas spotkań, więc tylko bazgrzę w swoim zeszycie.", "Podczas zajęć rysowała uroczy mały słonik.", "Nie uważam, że rysowanie bazgrołów to strata czasu; może to być relaksujące."],false)]
  
 
   createQuery(query:string){

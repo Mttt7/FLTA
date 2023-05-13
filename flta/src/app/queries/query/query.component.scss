@@ -1,0 +1,55 @@
+.word-card{
+    width: 100%;
+    margin-top: 2rem;
+    background-color: rgb(131, 133, 216);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    .header{
+        display: flex;
+        width: 100%;
+        
+        .name{
+            font-size: 2.4rem;
+            
+        }
+        .buttons{
+            margin-left: auto;
+            display: flex;
+            
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                :hover{
+                transform: scale(1.1);
+                }
+                img{
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+
+    .main{
+        .meanings{}
+
+        .example-sentence{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            .english-sentence{
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+            .polish-sentence{
+                font-style: italic;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}

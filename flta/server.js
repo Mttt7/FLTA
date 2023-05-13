@@ -1,4 +1,4 @@
-const API_KEY = "XXXXXXXXXXXXXXXX"
+const API_KEY = "XXX"
 
 const PORT = 8000
 const express = require('express')
@@ -24,7 +24,7 @@ app.post('/completions', async (req,res)=>{
             -sentencesEN: [tutaj przyklady zdan po angielsku  przynajmniej 4]
             -sentencesPL: [tutaj tlumaczenia powyzszych zdan na polski]`
             }],
-            max_tokens:200,
+            max_tokens:400,
         })
     }
 

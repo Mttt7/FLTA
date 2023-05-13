@@ -9,7 +9,11 @@ import { Word } from '../shared/word-model';
 })
 export class QueriesComponent implements OnInit {
 
-  constructor(private queriesManager:QueriesManagerService){}
+  constructor(private queriesManager:QueriesManagerService){
+    this.queriesManager.wordsUpdated.subscribe(()=>{
+      this.words = this.queriesManager.words
+    })
+  }
 
   words:Word[] = []
 
