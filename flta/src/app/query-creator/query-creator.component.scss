@@ -1,0 +1,13 @@
+button{
+    border: none;
+    padding: 5px 5px;
+    margin: 3px;
+    font-weight: 600;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}

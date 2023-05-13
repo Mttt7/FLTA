@@ -1,0 +1,13 @@
+<div class="word-card">
+    <div class="header">
+        <div class="name">{{word.name}}</div>
+        
+    </div>
+    <div class="main">
+        <div class="example-sentence" *ngFor="let sentence of word.sentencesEN; let i=index">
+            <div class="english-sentence">{{sentence}}</div>
+            <div class="polish-sentence">({{word.sentencesPL[i]}})</div>
+        </div>
+    </div>
+
+</div>
